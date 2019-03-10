@@ -1,0 +1,30 @@
+@import "./helpers/reset.scss";
+@import "./helpers/config";
+@import "./helpers/mixins";
+@import "./layout/header.scss";
+@import "./layout/album.scss";
+@import "./layout/home.scss";
+
+* {
+  box-sizing: border-box;
+  background: #ffffff;
+  font-family: $primaryFont;
+  color: $black;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
+
+a { text-decoration: none;}
+
+b { font-weight: bold; }
+
+.container{
+  max-width: 1500px;
+  width: 100%;
+  padding: 30px;
+}

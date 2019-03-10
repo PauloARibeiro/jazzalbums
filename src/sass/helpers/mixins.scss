@@ -1,0 +1,13 @@
+//TRANSITIONS
+@mixin ease-in-out($time, $props) {
+  transition: $props $time ease-in-out;
+}
+
+@mixin ease-in-sin($time, $props) {
+  transition: $props $time cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+//BORDER RADIUS
+@mixin borderRadius($radius){
+  border-radius: $radius;
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "8aefb1ce-969b-40e2-9163-dc8cfdbc814d",
+    "name": "kind of blue",
+    "author": "miles davis",
+    "releaseDate": "August 17, 1959",
+    "length": "45:44",
+    "label": "Columbia",
+    "producer": "Teo Macero, Irving Townsend",
+    "spotify": "https://open.spotify.com/album/1weenld61qoidwYuZ1GESA",
+    "amazon": "",
+    "tracks": [
+      {
+        "name": "so what",
+        "writer": "Miles Davis",
+        "length": "9:04"
+      },
+      {
+        "name": "Freddie Freeloader",
+        "writer": "Miles Davis",
+        "length": "9:34"
+      },
+      {
+        "name": "Blue in Green",
+        "writer": "Miles Davis, Bill Evans",
+        "length": "5:27"
+      },
+      {
+        "name": "all blues",
+        "writer": "Miles Davis",
+        "length": "11:33"
+      },
+      {
+        "name": "Flamenco Sketches",
+        "writer": "Miles Davis, Bill Evans",
+        "length": "9:26"
+      }
+    ]
+  },
+  {
+    "id": "aefb1ce-969b-40e2-9163-dc8cfdbc814d",
+    "name": "Blue Train",
+    "author": "John Coltrane",
+    "releaseDate": "September 15, 1957",
+    "length": "42:50",
+    "label": "Blue Note",
+    "producer": "Alfred Lion",
+    "spotify": "https://open.spotify.com/album/6q56DHp5aB6ATBnaTPb4YB",
+    "amazon": "https://www.amazon.com/Blue-Train-John-Coltrane/dp/B0000A5A0T/ref=sr_1_1?keywords=Blue+Train&qid=1551819625&s=gateway&sr=8-1",
+    "tracks": [
+      {
+        "name": "blue train",
+        "writer": "john coltrane",
+        "length": "10:43"
+      },
+      {
+        "name": "Moment's Notice",
+        "writer": "john coltrane",
+        "length": "9:10"
+      },
+      {
+        "name": "Locomotion",
+        "writer": "john coltrane",
+        "length": "7:14"
+      },
+      {
+        "name": "I'm Old Fashioned",
+        "writer": "john coltrane, Jerome Kern",
+        "length": "7:58"
+      },
+      {
+        "name": "Lazy Bird",
+        "writer": "john coltrane",
+        "length": "7:00"
+      }
+    ]
+  }
+]

@@ -1,0 +1,140 @@
+header {
+  //HAMBURGER ICON
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    right: 0%;
+    top: 0%;
+    width: 80px;
+    height: 80px;
+    background: $white;
+    z-index: 999;
+    cursor: pointer;
+    // @include ease-in-out(.4s, all);
+
+    //DOTS INSIDE THE HAMBURGER
+    .dot-parent {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background: $white;
+
+      .dot {
+        margin: 1px;
+        width: 5px;
+        height: 5px;
+        background: $black;
+        @include borderRadius(0.4px);
+        @include ease-in-sin(0.2s, all);
+      }
+    }
+
+    &:hover {
+      .dot-parent {
+        .dot {
+          margin: 0px;
+        }
+        &:first-child,
+        &:last-child {
+          .dot {
+            &:first-child,
+            &:last-child {
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //MENU
+  .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 997;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    display: none;
+    opacity: 0;
+
+    //BLACK BACKGROUND ON THE LEFT
+    .side-background-animate,
+    .side-background-fixed {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 100%;
+      background: $black;
+    }
+
+    //MENU IMG
+    .img {
+      width: 0px;
+      height: 400px;
+      z-index: 998;
+      margin-left: 15%;
+      background: url("https://picsum.photos/500/400") no-repeat center center;
+      @include borderRadius(1px);
+    }
+
+    //ARTISTS
+    .artists {
+      opacity: 0;
+      margin-top: 10%;
+      margin-left: 5%;
+
+      //TITLE
+      h1 {
+        font-family: $primaryFont;
+        font-weight: bold;
+        font-size: 4vw;
+      }
+
+      //LIST OF ARTISTS
+      .list {
+        text-transform: capitalize;
+        margin-top: 30px;
+        font-family: $secondaryFont;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(4, 130px);
+
+        h3 {
+          color: $grey;
+        }
+      }
+    }
+  }
+}
+
+ //BACK ARROW
+ .arrow-container {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px 20px 30px;
+  cursor: pointer;
+  @include ease-in-out(0.3s, all);
+  
+  .arrow {
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-color: $grey;
+    border-width: 0px 0px 1px 1px;
+    transform: rotate(45deg);
+  }
+
+  &:hover{
+    left: 0.5%;
+  }
+}
