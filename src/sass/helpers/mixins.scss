@@ -11,3 +11,17 @@
 @mixin borderRadius($radius){
   border-radius: $radius;
 }
+
+//POSITION MOVE
+@mixin right($value){
+  right: $value;
+}
+@mixin left($value){
+  left: $value;
+}
+@mixin top($value){
+  top: $value;
+}
+@mixin bottom($value){
+  bottom: $value;
+}

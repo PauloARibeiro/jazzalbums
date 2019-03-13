@@ -1,8 +1,8 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import { Redirect } from "@reach/router"
+// import { Redirect } from "@reach/router"
 
-import Arrow from "../components/backArrow"
+import Arrow from "../components/modules/backArrow"
 import spotifyLogo from "../images/spotify.svg"
 import amazonLogo from "../images/amazon.svg"
 import Layout from "../components/layout"
@@ -13,6 +13,7 @@ const redirectTo = link => {
   window.open(link, "_blank")
 }
 
+//CREATE DOTS BEHIND THE IMAGE
 const backgroundDots = () => {
   let dots = []
   for (var i = 0; i < 33; i++) {
@@ -24,7 +25,8 @@ const backgroundDots = () => {
 
 //ALBUM GRAPHQL JSON QUERY
 const AlbumInfo = () => {
-  const albumID = localStorage.getItem("albumID")
+  // const albumID = localStorage.getItem("albumID")
+  const albumID = "aefb1ce-969b-40e2-9163-dc8cfdbc814d";
 
   if (albumID) {
     return (
@@ -64,7 +66,6 @@ const AlbumInfo = () => {
     window.location = '/404';
     // return <Redirect to="/" />
   }
-  // ArtistAlbum(data)
 }
 
 const ArtistAlbum = data => {

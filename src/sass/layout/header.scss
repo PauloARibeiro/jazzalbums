@@ -12,7 +12,6 @@ header {
     background: $white;
     z-index: 999;
     cursor: pointer;
-    // @include ease-in-out(.4s, all);
 
     //DOTS INSIDE THE HAMBURGER
     .dot-parent {
@@ -51,7 +50,7 @@ header {
 
   //MENU
   .menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 997;

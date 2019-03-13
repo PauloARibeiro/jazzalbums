@@ -38,13 +38,16 @@
   }
 }
 
+.fullscreen-height{
+  position: relative;
+  height: 100vh;
+}
 //ALBUM LIST SECTION
 .album-list {
   position: relative;
-  background: $black;
-  height: 100vh;
+  // height: 100vh;
 
-  h1{
+  h1 {
     font-size: 4em;
     background: transparent;
     color: $white;
@@ -52,5 +55,59 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  //POSITION PARALLAX IMAGES
+  img {
+    background: transparent;
+  }
+
+  .img-small {
+    width: 20vw;
+  }
+
+  .img-medium {
+    width: 25vw;
+  }
+
+  .img-large {
+    width: 30vw;
+  }
+
+  .img-full{
+    width: 35vw;
+  }
+
+  .square {
+    width: 20vw;
+    height: 15vh;
+    background: $black;
+  }
+
+  .square-lines {
+    position: relative;
+    width: 20vw;
+    height: 8vw;
+    // transform: rotateZ(45deg);
+    .lines {
+      width: 80%;
+      height: 3px;
+      background: $black;
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        width: 100%;
+        height: 3px;
+        background: $black;
+      }
+
+      &:nth-child(2) {
+        transform: translateY(20px);
+      }
+
+      &:nth-child(3) {
+        transform: translateY(40px);
+      }
+    }
   }
 }
