@@ -1,0 +1,78 @@
+// BLOG PAGE
+.blog-page {
+  display: flex;
+
+  .blog-post,
+  .ads {
+    margin-top: 5vh;
+  }
+
+  // BLOG POST
+  .blog-post {
+    width: 70%;
+    padding-right: 30px;
+
+    // TITLE
+    h1 {
+      font-weight: bold;
+      font-size: 3.5em;
+      letter-spacing: 0.15em;
+    }
+
+    // TEXT
+    .text {
+      font-family: $secondaryFont;
+      line-height: 1.4;
+      font-size: 1.3em;
+    }
+
+    // AUTHOR
+    .author {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 15px 0px 30px 0px;
+
+      .img {
+        width: 45px;
+        height: 45px;
+        background: red;
+        border-radius: 50%;
+        margin: 0px 15px 0px 0px;
+      }
+
+      .name {
+        font-size: 1em;
+      }
+
+      .date {
+        color: $darkGrey;
+        margin-left: 35px;
+        position: relative;
+
+        &::after {
+          position: absolute;
+          content: "";
+          left: -19px;
+          top: 0;
+          height: 100%;
+          width: 1px;
+          background: $grey;
+        }
+      }
+    }
+
+    // BLOG IMG
+    .img {
+      width: 100%;
+      height: 300px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .ads {
+    width: 30%;
+    border-left: 1px solid $white;
+    padding-left: 30px;
+  }
+}

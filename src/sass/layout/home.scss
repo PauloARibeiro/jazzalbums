@@ -1,6 +1,9 @@
 .home {
   .intro {
-    position: relative;
+    z-index: -1;
+    position: fixed;
+    background-attachment: fixed;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -11,6 +14,11 @@
       font-weight: bold;
       font-size: 7vw;
     }
+  }
+
+  .spacing {
+    width: 100vw;
+    height: 100vh;
   }
 
   .arrow-container {
@@ -38,14 +46,40 @@
   }
 }
 
-.fullscreen-height{
+.fullscreen-height,
+.fullscreen-height-other,
+.blog {
+  background: #fbfbfb;
+}
+// ALBUM LIST HEIGHT
+
+.fullscreen-height-other {
+  height: 100%;
+}
+.fullscreen-height {
   position: relative;
   height: 100vh;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    left: 25%;
+    top: 0%;
+    background: $black;
+  }
+
+  &::after {
+    left: 75%;
+    width: 0.5px;
+  }
 }
+
 //ALBUM LIST SECTION
 .album-list {
   position: relative;
-  // height: 100vh;
 
   h1 {
     font-size: 4em;
@@ -62,6 +96,11 @@
     background: transparent;
   }
 
+  //IMAGE SIZES
+  .img-xsmall {
+    width: 15vw;
+  }
+
   .img-small {
     width: 20vw;
   }
@@ -74,40 +113,110 @@
     width: 30vw;
   }
 
-  .img-full{
+  .img-full {
     width: 35vw;
   }
 
-  .square {
-    width: 20vw;
-    height: 15vh;
-    background: $black;
+  //DIAMOND SHAPES
+  .diamond {
+    width: 60px;
+    height: 60px;
+    background: rgba($black, 0.1);
+    transform: rotateZ(45deg);
   }
 
-  .square-lines {
-    position: relative;
-    width: 20vw;
-    height: 8vw;
-    // transform: rotateZ(45deg);
-    .lines {
-      width: 80%;
-      height: 3px;
-      background: $black;
+  .diamond.medium {
+    width: 40px;
+    height: 40px;
+    background: rgba($black, 0.2);
+  }
 
-      &:nth-child(2),
-      &:nth-child(3) {
-        width: 100%;
-        height: 3px;
-        background: $black;
-      }
+  .diamond.small {
+    width: 20px;
+    height: 20px;
+    background: rgba($black, 0.3);
+  }
+}
 
-      &:nth-child(2) {
-        transform: translateY(20px);
-      }
+// BLOG SECTION
+.blog {
+  height: 100%;
+  padding: 10em 0px;
+  background: #fbfbfb;
+  .container {
+    // BLOG TITLE
+    h1 {
+      font-size: 3.5em;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 1em;
+    }
 
-      &:nth-child(3) {
-        transform: translateY(40px);
+    // BLOG CONTAINER
+    .item-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      grid-gap: 10px;
+
+      // BLOG ITEM
+      .item {
+        position: relative;
+        height: 350px;
+        background: url("http://aphelis.net/wp-content/uploads/2012/12/FUJITA_1959_Time_Out_Dave_Brubeck_Quartet.jpeg")
+          no-repeat;
+        background-size: cover;
+        cursor: pointer;
+        -webkit-box-shadow: 1px 1px 5px -4px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 1px 1px 5px -4px rgba(0, 0, 0, 0.16);
+        box-shadow: 1px 1px 5px -4px rgba(0, 0, 0, 0.16);
+
+        .title {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background: rgba($black, 0.9);
+          @include ease-in-sin(0.2s, all);
+
+          h2,
+          h5 {
+            background: transparent;
+            color: $white;
+            padding: 5px 20px;
+          }
+
+          h2 {
+            font-weight: bold;
+            padding-top: 20px;
+          }
+
+          h5 {
+            line-height: 1rem;
+            font-size: 1rem;
+            font-family: $secondaryFont;
+            padding-bottom: 20px;
+          }
+        }
+
+        &:hover {
+          .title {
+            background: rgba($black, 1);
+          }
+        }
       }
+    }
+  }
+}
+
+// FOOTER
+footer {
+  width: 100vw;
+  background: $black;
+
+  .container {
+    h5 {
+      text-align: center;
+      color: $white;
     }
   }
 }

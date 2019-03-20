@@ -1,20 +1,18 @@
 import React from "react"
 import SEO from "../seo"
+import Intro from "./homeIntro"
 import AlbumList from "./homeAlbumList"
+import BlogList from "./homeBlogList"
+import Footer from "./homeFooter"
 
 const Home = () => (
   <section className="home">
     <SEO title="Home" />
-
-    <div className="intro">
-      <h1>The best of Jazz</h1>
-
-      <div className="arrow-container">
-        <div className="arrow" />
-      </div>
-    </div>
-
+    <Intro />
+    <div className="spacing" />
     <AlbumList />
+    <BlogList />
+    <Footer />
   </section>
 )
 

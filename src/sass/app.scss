@@ -4,10 +4,11 @@
 @import "./layout/header.scss";
 @import "./layout/album.scss";
 @import "./layout/home.scss";
+@import "./layout/blog-post.scss";
 
 * {
   box-sizing: border-box;
-  background: #ffffff;
+  // background: #ffffff;
   font-family: $primaryFont;
   color: $black;
 }
@@ -28,7 +29,8 @@ a { text-decoration: none;}
 b { font-weight: bold; }
 
 .container{
-  max-width: 1500px;
+  max-width: 1300px;
   width: 100%;
-  padding: 30px;
+  padding: 20px;
+  margin: 0 auto;
 }
