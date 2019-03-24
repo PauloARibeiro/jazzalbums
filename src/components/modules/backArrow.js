@@ -2,9 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 
 const BackArrow = () => (
-  <Link className="arrow-container">
+  <span className="arrow-container" onClick={() => goBack()}>
     <div className="arrow" />
-  </Link>
+  </span>
 )
+
+const goBack = () => {
+  window.history.go(-1);
+}
 
 export default BackArrow

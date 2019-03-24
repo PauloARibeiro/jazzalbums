@@ -25,8 +25,8 @@ const backgroundDots = () => {
 
 //ALBUM GRAPHQL JSON QUERY
 const AlbumInfo = () => {
-  // const albumID = localStorage.getItem("albumID")
-  const albumID = "aefb1ce-969b-40e2-9163-dc8cfdbc814d";
+  const albumID = localStorage.getItem("albumID")
+  // const albumID = "940b63f0-bc61-4081-82c7-3e1e7c6c06f1"
 
   if (albumID) {
     return (
@@ -45,6 +45,7 @@ const AlbumInfo = () => {
                   producer
                   spotify
                   amazon
+                  image
                   tracks {
                     name
                     writer
@@ -63,7 +64,7 @@ const AlbumInfo = () => {
       />
     )
   } else {
-    window.location = '/404';
+    window.location = "/404"
     // return <Redirect to="/" />
   }
 }
@@ -78,6 +79,7 @@ const ArtistAlbum = data => {
     releaseDate,
     spotify,
     amazon,
+    image,
     tracks,
   } = data[0].node
 
@@ -169,7 +171,7 @@ const ArtistAlbum = data => {
             <a href={spotify} target="_blank" rel="noopener noreferrer">
               <img
                 className="img"
-                src="http://albumdujour.com/wp-content/uploads/2012/04/blue-train-coltrane.jpeg"
+                src={`/images/${image}`}
                 alt={name}
               />
             </a>

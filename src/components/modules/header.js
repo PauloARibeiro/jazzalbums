@@ -155,52 +155,9 @@ const animateOn = () => {
   })
 }
 
-const artists = [
-  {
-    name: "John Doe",
-    album: "Doe",
-  },
-  {
-    name: "john doe",
-    album: "Doe",
-  },
-  {
-    name: "John Doe",
-    album: "Doe",
-  },
-  {
-    name: "John Doe",
-    album: "Doe",
-  },
-  {
-    name: "John Doe",
-    album: "Doe",
-  },
-  {
-    name: "John Doe",
-    album: "Doe",
-  },
-  {
-    name: "John Doe",
-    album: "Doe",
-  },
-  {
-    name: "John Doe",
-    album: "Doe",
-  },
-  {
-    name: "John Doe",
-    album: "Doe",
-  },
-  {
-    name: "John Doe",
-    album: "Doe",
-  },
-  {
-    name: "John Doe",
-    album: "Doe",
-  },
-]
+const redirectTo = (url) => {
+  window.location.href = url;
+}
 
 const Header = () => (
   <header>
@@ -231,16 +188,9 @@ const Header = () => (
       <div className="img" />
 
       <div className="artists">
-        <h1>Artists</h1>
-        <div className="list">
-          {artists.map((artist, key) => {
-            return (
-              <h4 key={key}>
-                <Link>{artist.name}</Link>
-              </h4>
-            )
-          })}
-        </div>
+        <h1 onClick={() => redirectTo('/')}>Home</h1>
+        <h1 onClick={() => redirectTo('/bloglist')}>Blog</h1>
+        {/* <h1 onClick={() => redirectTo('/albumlist')}>List</h1> */}
       </div>
     </section>
   </header>

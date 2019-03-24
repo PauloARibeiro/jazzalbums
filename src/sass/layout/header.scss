@@ -50,6 +50,7 @@ header {
 
   //MENU
   .menu {
+    background: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -90,9 +91,17 @@ header {
 
       //TITLE
       h1 {
+        cursor: pointer;
         font-family: $primaryFont;
         font-weight: bold;
-        font-size: 4vw;
+        font-size: 3em;
+        margin-bottom: 0.5em;
+        color: lighten($color: $black, $amount: 10%);
+        @include ease-in-out(0.15s, all);
+
+        &:hover {
+          color: $black;
+        }
       }
 
       //LIST OF ARTISTS
@@ -112,8 +121,8 @@ header {
   }
 }
 
- //BACK ARROW
- .arrow-container {
+//BACK ARROW
+.arrow-container {
   position: absolute;
   top: 0%;
   left: 0%;
@@ -123,7 +132,7 @@ header {
   padding: 30px 20px 20px 30px;
   cursor: pointer;
   @include ease-in-out(0.3s, all);
-  
+
   .arrow {
     width: 20px;
     height: 20px;
@@ -133,7 +142,7 @@ header {
     transform: rotate(45deg);
   }
 
-  &:hover{
+  &:hover {
     left: 0.5%;
   }
 }

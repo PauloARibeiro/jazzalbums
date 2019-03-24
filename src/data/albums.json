@@ -9,6 +9,7 @@
     "producer": "Teo Macero, Irving Townsend",
     "spotify": "https://open.spotify.com/album/1weenld61qoidwYuZ1GESA",
     "amazon": "",
+    "image": "01.jpg",
     "tracks": [
       {
         "name": "so what",
@@ -47,6 +48,7 @@
     "producer": "Alfred Lion",
     "spotify": "https://open.spotify.com/album/6q56DHp5aB6ATBnaTPb4YB",
     "amazon": "https://www.amazon.com/Blue-Train-John-Coltrane/dp/B0000A5A0T/ref=sr_1_1?keywords=Blue+Train&qid=1551819625&s=gateway&sr=8-1",
+    "image": "02.jpeg",
     "tracks": [
       {
         "name": "blue train",
@@ -72,6 +74,178 @@
         "name": "Lazy Bird",
         "writer": "john coltrane",
         "length": "7:00"
+      }
+    ]
+  },
+  {
+    "id": "940b63f0-bc61-4081-82c7-3e1e7c6c06f1",
+    "name": "Relaxin' with The Miles Davis Quintet",
+    "author": "Miles Davis Quintet",
+    "releaseDate": "May 11 and October 26, 1956",
+    "length": "36:13",
+    "label": "Prestige",
+    "producer": "Bob Weinstock",
+    "spotify": "https://open.spotify.com/album/0dyIXPKoUBt1vFJHX57dqt",
+    "amazon": "https://www.amazon.com/Relaxin-Miles-Davis-Quintet/dp/B000000YAL",
+    "image": "03.jpg",
+    "tracks": [
+      {
+        "name": "If I Were a Bell",
+        "writer": "Frank Loesser",
+        "length": "8:15"
+      },
+      {
+        "name": "you're my everything",
+        "writer": "Harry Warren",
+        "length": "5:18"
+      },
+      {
+        "name": "i could write a book",
+        "writer": "Richard Rodgers",
+        "length": "5:09"
+      },
+      {
+        "name": "oleo",
+        "writer": "Sonny Rollins",
+        "length": "6:18"
+      },
+      {
+        "name": "It Could Happen to You",
+        "writer": "Jimmy Van Heusen",
+        "length": "6:37"
+      },
+      {
+        "name": "Woody 'n' You",
+        "writer": "Dizzy Gillespie",
+        "length": "5:02"
+      }
+    ]
+  },
+  {
+    "id": "2510acd1-f5cf-4699-9b6d-2f325bdb1a76",
+    "name": "The Incredible Jazz Guitar of Wes Montgomery",
+    "author": "Wes Montgomery",
+    "releaseDate": "1960",
+    "length": "44:04",
+    "label": "Riverside/OJC",
+    "producer": "Orrin Keepnews",
+    "spotify": "https://open.spotify.com/album/5RwRaAJXxc7SULhw1Z1j0y",
+    "amazon": "https://www.amazon.com/Incredible-Jazz-Guitar-Wes-Montgomery/dp/B000000Y27",
+    "image": "04.jpg",
+    "tracks": [
+      {
+        "name": "Airegin",
+        "writer": "Sonny Rollins",
+        "length": "4:26"
+      },
+      {
+        "name": "D-Natural Blues",
+        "writer": "Wes Montgomery",
+        "length": "5:23"
+      },
+      {
+        "name": "Polka Dots and Moonbeams",
+        "writer": "Jimmy Van Heusen, Johnny Burke",
+        "length": "4:44"
+      },
+      {
+        "name": "Four on Six",
+        "writer": "Wes Montgomery",
+        "length": "6:15"
+      },
+      {
+        "name": "West Coast Blues",
+        "writer": "Montgomery, Granville Sascha Burland",
+        "length": "7:26"
+      },
+      {
+        "name": "In Your Own Sweet Way",
+        "writer": "Dave Brubeck",
+        "length": "4:53"
+      },
+      {
+        "name": "Mr. Walker (Renie)",
+        "writer": "Wes Montgomery",
+        "length": "4:33"
+      },
+      {
+        "name": "Gone With the Wind",
+        "writer": "Allie Wrubel, Herb Magidson",
+        "length": "6:24"
+      }
+    ]
+  },
+  {
+    "id": "2510acd1-f5cf-4699-9b6d-2f325bdb1a76",
+    "name": "Virtuoso",
+    "author": "Joe Pass",
+    "releaseDate": "December 1973",
+    "length": "51:51",
+    "label": "Pablo",
+    "producer": "Norman Granz",
+    "spotify": "https://open.spotify.com/album/5RwRaAJXxc7SULhw1Z1j0y",
+    "amazon": "https://www.amazon.com/Incredible-Jazz-Guitar-Wes-Montgomery/dp/B000000Y27",
+    "image": "05.png",
+    "tracks": [
+      {
+        "name": "Night and Day",
+        "writer": "Cole Porter",
+        "length": "3:32"
+      },
+      {
+        "name": "Stella by Starlight",
+        "writer": "Ned Washington, Victor Young",
+        "length": "5:10"
+      },
+      {
+        "name": "Here's That Rainy Day",
+        "writer": "Johnny Burke, Jimmy Van Heusen",
+        "length": "3:36"
+      },
+      {
+        "name": "My Old Flame",
+        "writer": "Sam Coslow, Arthur Johnston",
+        "length": "5:17"
+      },
+      {
+        "name": "How High the Moon",
+        "writer": "Nancy Hamilton, Morgan Lewis",
+        "length": "4:59"
+      },
+      {
+        "name": "Cherokee",
+        "writer": "Ray Nobble",
+        "length": "3:37"
+      },
+      {
+        "name": "Sweet Lorraine",
+        "writer": "Cliff Burwell, Mitchell Parish",
+        "length": "4:09"
+      },
+      {
+        "name": "Have You Met Miss Jones?", 
+        "writer": "Richard Rodgers, Lorenz Hart",
+        "length": "4:42"
+      },
+      {
+        "name": "Round Midnight", 
+        "writer": "Bernie Hanighen, Thelonious Monk, Cootie Williams",
+        "length": "3:38"
+      },
+      {
+        "name": "All the Things You Are", 
+        "writer": "Oscar Hammerstein II, Jerome Kern",
+        "length": "4:01"
+      },
+      {
+        "name": "Blues for Alican", 
+        "writer": "Joe Pass",
+        "length": "5:29"
+      },
+      {
+        "name": "The Song Is You", 
+        "writer": "Hammerstein, Kern",
+        "length": "4:34"
       }
     ]
   }

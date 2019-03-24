@@ -10,11 +10,11 @@ const BlogList = data => {
         <div className="item-container">
           {data.allMarkdownRemark.edges.map(post => {
             const id = post.node.id
-            const { path, title, description } = post.node.frontmatter
+            const { path, title, description, image } = post.node.frontmatter
 
             return (
               <Link to={path}>
-                <div className="item" key={id}>
+                <div className="item" key={id} style={{background: `url(${image})`}}>
                   <div className="title">
                     <h2>{title}</h2>
                     <h5>{description}</h5>
@@ -46,6 +46,7 @@ const BlogQuery = () => {
                   description
                   author
                   authorBio
+                  image
                 }
               }
             }
